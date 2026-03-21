@@ -1,0 +1,35 @@
+name: Daily Podcast Generator
+
+on:
+  schedule:
+    - cron: '30 0 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests anthropic
+
+      - name: Generate podcast
+        env:
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
+          ELEVENLABS_KEY: ${{ secrets.ELEVENLABS_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+        run: python generate_podcast.py
+
+      - name: Upload podcast
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-podcast
+          path: podcast.mp3
+          retention-days: 7
