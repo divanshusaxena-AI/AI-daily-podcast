@@ -1,10 +1,11 @@
 {
-  "duration_minutes": 60,
+  "duration_minutes": 10,
   "language": "English",
   "location": "Delhi, India",
   "voice_style": "warm and conversational",
   "topics": [
-    "World news"
+    "Fintech and banking",
+    "Geopolitics"
   ],
   "sources": {
     "india_news": true,
