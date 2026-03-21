@@ -1,5 +1,5 @@
 {
-  "duration_minutes": 5,
+  "duration_minutes": 60,
   "language": "English",
   "location": "Delhi, India",
   "voice_style": "warm and conversational",
@@ -15,7 +15,6 @@
     "sports": false,
     "health": false,
     "geopolitics": false,
-    "the_ken": true,
     "finshots": false,
     "morning_brew": false,
     "all_in": false,
