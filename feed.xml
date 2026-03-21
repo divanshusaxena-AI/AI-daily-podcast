@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>My Daily Podcast</title>
+    <description>Personal AI generated daily briefing for Delhi commute</description>
+    <language>en-in</language>
+    <itunes:author>Divansh</itunes:author>
+    <itunes:category text="News"/>
+    <item>
+      <title>Daily Briefing - Latest</title>
+      <description>Your AI generated daily news briefing</description>
+      <enclosure url="https://divanshusaxena-ai.github.io/AI-daily-podcast/podcast.mp3" type="audio/mpeg"/>
+      <guid>https://divanshusaxena-ai.github.io/AI-daily-podcast/podcast.mp3</guid>
+      <pubDate>Sat, 21 Mar 2026 06:30:00 +0530</pubDate>
+      <itunes:duration>20:00</itunes:duration>
+    </item>
+  </channel>
+</rss>
