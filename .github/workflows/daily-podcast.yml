@@ -8,6 +8,8 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
 
@@ -27,9 +29,13 @@ jobs:
           ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
         run: python generate_podcast.py
 
-      - name: Upload podcast
-        uses: actions/upload-artifact@v4
-        with:
-          name: daily-podcast
-          path: podcast.mp3
-          retention-days: 7
+      - name: Update RSS feed
+        run: python update_feed.py
+
+      - name: Push podcast and feed to repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add podcast.mp3 feed.xml
+          git commit -m "Daily podcast $(date +'%Y-%m-%d')"
+          git push
