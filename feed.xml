@@ -7,11 +7,11 @@
     <itunes:author>Divansh</itunes:author>
     <itunes:category text="News"/>
     <item>
-      <title>Daily Briefing - 21 Mar 2026</title>
-      <description>Your AI generated daily news briefing for 21 Mar 2026</description>
+      <title>Daily Briefing - 23 Mar 2026</title>
+      <description>Your AI generated daily news briefing for 23 Mar 2026</description>
       <enclosure url="https://divanshusaxena-AI.github.io/AI-daily-podcast/podcast.mp3" type="audio/mpeg"/>
-      <guid>https://divanshusaxena-AI.github.io/AI-daily-podcast/podcast.mp3?date=20260321</guid>
-      <pubDate>Sat, 21 Mar 2026 18:01:52 +0000</pubDate>
+      <guid>https://divanshusaxena-AI.github.io/AI-daily-podcast/podcast.mp3?date=20260323</guid>
+      <pubDate>Mon, 23 Mar 2026 05:53:35 +0000</pubDate>
       <itunes:duration>20:00</itunes:duration>
     </item>
   </channel>
