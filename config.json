@@ -1,25 +1,25 @@
 {
-  "duration_minutes": 10,
+  "duration_minutes": 20,
   "language": "English",
   "location": "Delhi, India",
   "voice_style": "warm and conversational",
   "topics": [
-    "Fintech and banking",
-    "Geopolitics"
+    "Technology and AI",
+    "Fintech and banking"
   ],
   "sources": {
     "india_news": true,
     "hacker_news": true,
     "ai_news": true,
     "business_news": true,
-    "finance_news": false,
+    "finance_news": true,
     "sports": false,
     "health": false,
     "geopolitics": false,
-    "finshots": false,
-    "morning_brew": false,
-    "all_in": false,
-    "lex_fridman": false
+    "finshots": true,
+    "morning_brew": true,
+    "all_in": true,
+    "lex_fridman": true
   },
   "podcast_style": {
     "host_name": "Arjun",
