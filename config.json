@@ -5,7 +5,10 @@
   "voice_style": "warm and conversational",
   "topics": [
     "Technology and AI",
-    "Fintech and banking"
+    "Business and startups",
+    "Lending and credit",
+    "Fintech and banking",
+    "Startup funding and VC"
   ],
   "sources": {
     "india_news": true,
